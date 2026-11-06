@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - QR & Barcode Scanner</title>
+  <style>
+    :root {
+      --primary: #00e5ff;
+      --primary-dark: #00b0ff;
+      --bg-dark: #0f2027;
+      --card-bg: rgba(255, 255, 255, 0.05);
+      --card-border: rgba(255, 255, 255, 0.12);
+      --text-main: #f0f4f8;
+      --text-muted: #94a3b8;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+      color: var(--text-main);
+      line-height: 1.7;
+      padding: 40px 20px;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      background: rgba(15, 32, 39, 0.75);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--card-border);
+      border-radius: 24px;
+      padding: 40px;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+      padding-bottom: 30px;
+      border-bottom: 1px solid var(--card-border);
+    }
+
+    .app-badge {
+      display: inline-block;
+      padding: 6px 16px;
+      background: rgba(0, 229, 255, 0.15);
+      border: 1px solid var(--primary);
+      color: var(--primary);
+      border-radius: 50px;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+
+    .date {
+      color: var(--text-muted);
+      font-size: 14px;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary);
+      margin-top: 36px;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    p, ul {
+      color: var(--text-main);
+      font-size: 15px;
+      margin-bottom: 18px;
+    }
+
+    ul {
+      padding-left: 24px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 14px;
+      padding: 20px;
+      margin: 20px 0;
+    }
+
+    .card strong {
+      color: var(--primary);
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    a:hover {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      padding-top: 24px;
+      border-top: 1px solid var(--card-border);
+      color: var(--text-muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 640px) {
+      body {
+        padding: 20px 12px;
+      }
+      .container {
+        padding: 24px 18px;
+        border-radius: 16px;
+      }
+      h1 {
+        font-size: 24px;
+      }
+      h2 {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <div class="app-badge">Official Policy</div>
+      <h1>Privacy Policy</h1>
+      <p class="date">Effective Date: November 6, 2026 • Version 1.0</p>
+    </header>
+
+    <main>
+      <p>
+        Welcome to <strong>QR &amp; Barcode Scanner</strong> (&quot;we,&quot; &quot;our,&quot; or &quot;the App&quot;), developed by <strong>Innovexa Technologies</strong>. We are committed to protecting your personal privacy. This Privacy Policy outlines our transparent approach regarding data collection, device permissions, and on-device processing.
+      </p>
+
+      <h2>1. Our Privacy Philosophy</h2>
+      <p>
+        <strong>We believe in zero data harvesting.</strong> The App functions as a standalone, offline-first tool designed to scan barcodes and QR codes. We do not track, profile, collect, sell, or transmit any of your personal details, photos, or scan history to any remote servers.
+      </p>
+
+      <h2>2. Device Permissions &amp; How They Are Used</h2>
+      <p>The App requests only the minimum permissions necessary to perform its core barcode and QR scanning functionalities:</p>
+
+      <div class="card">
+        <strong>📷 Camera Permission (android.permission.CAMERA)</strong>
+        <p style="margin-top: 8px; margin-bottom: 0;">
+          <strong>Why it is needed:</strong> The camera is used solely to provide a real-time live preview for recognizing and decoding QR codes and barcodes.<br>
+          <strong>Privacy Guarantee:</strong> Video feeds are processed entirely in memory on your physical device and are <em>never</em> recorded, saved, or uploaded to any server.
+        </p>
+      </div>
+
+      <div class="card">
+        <strong>🖼️ Photo &amp; Storage Permission (READ_MEDIA_IMAGES / READ_EXTERNAL_STORAGE)</strong>
+        <p style="margin-top: 8px; margin-bottom: 0;">
+          <strong>Why it is needed:</strong> Optional. Requested only if you explicitly choose the &quot;Scan Image&quot; feature to pick an existing image or screenshot containing a QR code from your device gallery.<br>
+          <strong>Privacy Guarantee:</strong> The selected image is processed on-device using Google ML Kit. No other photos or media files are ever accessed.
+        </p>
+      </div>
+
+      <div class="card">
+        <strong>⚡ Flashlight (android.permission.FLASHLIGHT)</strong>
+        <p style="margin-top: 8px; margin-bottom: 0;">
+          Used strictly to toggle the device flashlight so you can scan codes in low-light environments.
+        </p>
+      </div>
+
+      <h2>3. Local Data Storage (Scan History)</h2>
+      <p>
+        To provide you with access to past scans, the App saves your scanned results locally in your device&#39;s internal private storage (via Android SharedPreferences).
+      </p>
+      <ul>
+        <li>This history is stored <strong>exclusively on your physical phone</strong>.</li>
+        <li>It is never synchronized or backed up to our servers.</li>
+        <li>You can delete individual history records or completely wipe your entire scan history at any time with one tap from the <strong>History Screen</strong>.</li>
+      </ul>
+
+      <h2>4. Third-Party Services &amp; Libraries</h2>
+      <p>The App utilizes trusted, industry-standard open-source components:</p>
+      <ul>
+        <li><strong>Google ML Kit Barcode Scanning:</strong> Powers on-device computer vision to parse barcode images locally on your device without transmitting data across the internet.</li>
+        <li><strong>Mobile Scanner &amp; URL Launcher:</strong> Used to render the camera preview and to launch system intents (e.g. opening a web link in your preferred browser, dialing a phone number, or opening an email client).</li>
+      </ul>
+
+      <h2>5. Children&#39;s Privacy (COPPA &amp; GDPR)</h2>
+      <p>
+        Our App is suitable for general audiences of all ages (Content Rating: Everyone). We do not knowingly collect, store, or solicit any personal identification information from children under the age of 13 (or under 16 in the European Union).
+      </p>
+
+      <h2>6. Security</h2>
+      <p>
+        Because your data never leaves your device, your scan information remains completely under your personal control. External links (such as websites opened from scanned QR codes) are launched securely in your device&#39;s default browser via HTTPS protocols.
+      </p>
+
+      <h2>7. Changes to This Privacy Policy</h2>
+      <p>
+        We may update our Privacy Policy periodically to reflect app updates or regulatory requirements. Any revisions will be reflected on this page with an updated Effective Date.
+      </p>
+
+      <h2>8. Contact Us</h2>
+      <p>
+        If you have any questions, feedback, or concerns regarding this Privacy Policy or your privacy while using the App, please contact us:
+      </p>
+      <ul>
+        <li><strong>Developer:</strong> Innovexa Technologies</li>
+        <li><strong>Email Support:</strong> <a href="mailto:innovexa.technologies01@gmail.com">innovexa.technologies01@gmail.com</a></li>
+        <li><strong>Website:</strong> <a href="https://innovexa.com" target="_blank" rel="noopener">https://innovexa.com</a></li>
+      </ul>
+    </main>
+
+    <footer>
+      &copy; 2026 Innovexa Technologies. All rights reserved.
+    </footer>
+  </div>
+
+</body>
+</html>
+
